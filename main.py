@@ -2,7 +2,7 @@
    This is the main file for the program
 """
 from measuring_service import measur_serv
-from cleaned_menu import school_menu
+from school_system import school_menu
 from login_system import login_system, signup
 
 
