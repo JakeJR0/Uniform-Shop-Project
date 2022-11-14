@@ -4,8 +4,8 @@
 """
 
 # Imports the required modules
-import pytest
 from datetime import datetime, timedelta
+import pytest
 
 # Imports the measuring_service.py file to test the functions within it.
 from measuring_service import f_name_vali, l_name_vali, date_vali
@@ -186,8 +186,8 @@ def test_date_vali():
 
     # Ensures that a TypeError is raised if an int is passed to the function
     with pytest.raises(TypeError):
-      assert date_vali(234) is False, \
-      "The function should reject a int."
+        assert date_vali(234) is False, \
+        "The function should reject a int."
 
     # Ensures that a TypeError is raised if an float is passed to the function
     with pytest.raises(TypeError):
@@ -196,8 +196,8 @@ def test_date_vali():
 
     # Ensures that a TypeError is raised if an boolean is passed to the function
     with pytest.raises(TypeError):
-      assert date_vali(True) is False, \
-      "The function should reject the boolean"
+        assert date_vali(True) is False, \
+        "The function should reject the boolean"
 
     # Calculates the date in a year's time
     next_year = today + timedelta(days=365)
