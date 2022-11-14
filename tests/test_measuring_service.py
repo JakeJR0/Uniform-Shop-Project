@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import pytest
 
 # Imports the measuring_service.py file to test the functions within it.
-from measuring_service import date_vali, f_name_vali, l_name_vali
+from .measuring_service import date_vali, f_name_vali, l_name_vali
 
 
 def test_f_name_vali_basic():

@@ -9,7 +9,7 @@ from werkzeug.security import check_password_hash
 
 # Imports the login_system.py file to test the functions within it.
 
-from login_system import encrypt_pass, login, signup
+from .login_system import encrypt_pass, login, signup
 
 USER_DETAILS_FILE_NAME = "passdetail"
 
